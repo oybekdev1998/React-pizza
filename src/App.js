@@ -5,6 +5,8 @@ import './scss/app.scss';
 import { Header } from './components'
 
 import Home from "./pages/Home";
+import Cart from "./pages/Cart";
+import { Route, Routes } from "react-router-dom";
 
 
 
@@ -13,7 +15,10 @@ function App() {
     <div className="wrapper">
       <Header />
       <div className="content">
-        <Home />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/cart"  element={<Cart />} />
+        </Routes>
       </div>
     </div>
   );
