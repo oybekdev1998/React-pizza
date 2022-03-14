@@ -50,7 +50,7 @@ const SortPopup = ({ items }) => {
         sortVisable && <div className="sort__popup">
         <ul>
           {
-            items.map((item, index) => (
+            items && items.map((item, index) => (
               <li
                 onClick={() => onSelectItem(index)}
                 key={index}

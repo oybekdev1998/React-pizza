@@ -1,6 +1,7 @@
 
 const initialState = {
-  items: []
+  items: [],
+  isLoaded: false
 }
 
 const pizzas = (state = initialState, action) => {
@@ -11,11 +12,10 @@ const pizzas = (state = initialState, action) => {
         items: action.payload
       }
       
-      
-  
-    default:
-      return state
+      default:
+        return state
   }
 }
-
+    
 export default pizzas
+    
