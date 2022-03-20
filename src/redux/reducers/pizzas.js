@@ -1,8 +1,7 @@
-
 const initialState = {
   items: [],
-  isLoaded: false
-}
+  isLoaded: false,
+};
 
 const pizzas = (state = initialState, action) => {
   switch (action.type) {
@@ -11,12 +10,17 @@ const pizzas = (state = initialState, action) => {
         ...state,
         items: action.payload,
         isLoaded: true,
-      }
-      
-      default:
-        return state
+      };
+
+    case 'SET_LOADED':
+      return {
+        ...state,
+        isLoaded: action.payload,
+      };
+
+    default:
+      return state;
   }
-}
-    
-export default pizzas
-    
+};
+
+export default pizzas;
