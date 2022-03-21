@@ -1,4 +1,4 @@
-JSON Server: yarn server
+For run json-server: yarn server
 
 # Getting Started with Create React App
 
