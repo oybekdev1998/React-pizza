@@ -33,6 +33,7 @@ function Home() {
 
   React.useEffect(() => {
     dispatch(fetchPizzas(sortBy, category));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category, sortBy]);
 
   const onSelectCategory = React.useCallback((index) => {
@@ -66,7 +67,7 @@ function Home() {
       </div>
       <h2 className="content__title">Все пиццы</h2>
       <div className="content__items">
-        {isLoaded
+        { isLoaded
           ? items.map((obj) => (
               <PizzaBlock
                 onClickAddPizza={handleAddPizzaToCart}
@@ -77,7 +78,8 @@ function Home() {
             ))
           : Array(12)
               .fill(0)
-              .map((_, index) => <PizzaLoadingBlock key={index} />)}
+              .map((_, index) => <PizzaLoadingBlock key={index} />)
+        }
       </div>
     </div>
   );

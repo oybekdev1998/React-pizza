@@ -11,9 +11,8 @@ export const fetchPizzas = (sortBy, category) => (dispatch) => {
     payload: false,
   });
 
-  axios
-    .get(
-      `/pizzas?${category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&_order=${
+  axios.get(
+      `public/db.json/pizzas?${category !== null ? `category=${category}` : ''}&_sort=${sortBy.type}&_order=${
         sortBy.order
       }`,
     )
