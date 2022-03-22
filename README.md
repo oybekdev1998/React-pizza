@@ -1,5 +1,21 @@
 For run json-server: yarn server
 
+Stack:
+
+ReactJS + хуки
+
+React Router
+
+Redux
+
+Redux thunk
+
+json-server
+
+Axios
+
+classnames
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
