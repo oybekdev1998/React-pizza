@@ -3,11 +3,17 @@ For run json-server: yarn server
 Stack:
 
 ReactJS + хуки
+
 React Router
+
 Redux
+
 Redux thunk
+
 json-server
+
 Axios
+
 classnames
 
 # Getting Started with Create React App
