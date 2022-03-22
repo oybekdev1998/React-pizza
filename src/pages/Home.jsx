@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 
+
+
 import {
   Categories,
   SortPopup,
@@ -35,7 +37,7 @@ function Home() {
     dispatch(fetchPizzas(sortBy, category));
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category, sortBy]);
-
+    
   const onSelectCategory = React.useCallback((index) => {
     dispatch(setCategory(index));
   }, [dispatch]);
@@ -50,7 +52,6 @@ function Home() {
       payload: obj,
     });
   };
-
   return (
     <div className="container">
       <div className="content__top">
