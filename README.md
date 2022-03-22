@@ -1,3 +1,5 @@
+Deploy version: https://react-pizza-oybek.herokuapp.com/
+
 For run json-server: yarn server
 
 Stack:
